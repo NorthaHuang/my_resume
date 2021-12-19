@@ -1,10 +1,10 @@
 export default {
-  mercury: 10,
-  venus: 20,
-  earth: 30,
-  mars: 40,
-  jupiter: 50,
-  saturn: 60,
-  uranus: 70,
-  neptune: 80,
+  MERCURY: 10,
+  VENUS: 20,
+  EARTH: 30,
+  MARS: 40,
+  JUPITER: 50,
+  SATURN: 60,
+  URANUS: 70,
+  NEPTUNE: 80,
 };
