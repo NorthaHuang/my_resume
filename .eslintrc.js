@@ -32,6 +32,7 @@ module.exports = {
       },
       extends: [
         'eslint:recommended',
+        'next',
         'plugin:@typescript-eslint/recommended', // TypeScript rules
         'plugin:react/recommended', // React rules
         'plugin:react-hooks/recommended', // React hooks rules

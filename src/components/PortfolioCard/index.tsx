@@ -15,7 +15,7 @@ export const PortfolioCard: React.FC<CardProps> = ({ name, slug, url, imgSrc }) 
           <S.ProjectName className="hover-project-name">{name}</S.ProjectName>
 
           {slug && (
-            <Link href={`/portfolio/${slug}`}>
+            <Link passHref href={`/portfolio/${slug}`}>
               <S.ALink>專案說明</S.ALink>
             </Link>
           )}
