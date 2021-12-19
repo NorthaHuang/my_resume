@@ -1,5 +1,9 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
+
+type CardProps = {
+  bgImage?: string;
+};
 
 export default {
   // gap: 12px;
@@ -8,18 +12,22 @@ export default {
     @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
       width: calc(50% - 6px);
     }
-    @media ${({ theme: { breakpoints } }) => breakpoints.desktop} {
-      width: calc(33% - 8px);
-    }
   `,
-  Card: styled.li`
+  Card: styled.li<CardProps>`
     width: 100%;
     height: 100%;
-    padding: 4px 8px;
     overflow: hidden;
     border: 1px solid ${({ theme: { palette } }) => palette.BLACK};
     border-radius: ${({ theme: { shape } }) => shape.borderRadius.standard}px;
     position: relative;
+
+    ${({ bgImage }) =>
+      bgImage &&
+      css`
+        background-image: url(${bgImage});
+        background-size: cover;
+        background-position: top center;
+      `}
 
     &:hover {
       .hover-card-mask {
@@ -28,27 +36,30 @@ export default {
       }
 
       .hover-project-name {
-        color: ${({ theme: { palette } }) => palette.WHITE};
+        opacity: 1;
       }
     }
   `,
 
   ProjectName: styled.span`
+    opacity: 0;
     transition: ${({ theme: { transitions } }) => transitions.duration.short}ms;
-    color: ${({ theme: { palette } }) => palette.BLACK};
+    color: ${({ theme: { palette } }) => palette.WHITE};
     z-index: ${({ theme: { zIndex } }) => zIndex.MERCURY};
-    position: relative;
+    position: absolute;
+    top: 16px;
+    left: 24px;
   `,
 
   Mask: styled.div`
     width: 100%;
     height: 100%;
-    padding: inherit;
+    padding: 16px 24px;
     opacity: 0;
     transition: ${({ theme: { transitions } }) => transitions.duration.short}ms;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     gap: 0 8px;
     background-color: ${({ theme: { palette } }) => rgba(palette.BLACK, 0.75)};
     backdrop-filter: blur(10px);

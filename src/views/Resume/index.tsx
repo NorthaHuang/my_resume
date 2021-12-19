@@ -37,12 +37,22 @@ const resumeData = {
         url: 'https://www.sparkamplify.com/',
       },
       title: '軟體工程師 (前端)',
-      duration: '2020/10 ~ 仍在職 (1年2個月)',
+      duration: '2020/10 ~ 仍在職',
       image: {
         src: '/images/company_logo/sparkamplify.jpg',
         alt: 'SparkAmplify 公司 Logo',
       },
-      responsibility: ['開發新系統和維護現有產品。'],
+      responsibility: [
+        '教導實習生技術並協助其一同加入開發。',
+        '幫助公司 Google Cloud Function 讀取速度從 9 秒提升到 3 秒。',
+        '和後端工程師使用 Notion 協作、制定 API。',
+        '使用 Redux-Saga 和 Axios 串接後端 API。',
+        '維護 GitLab CI/CD。',
+        '串接 GTM tags 並將後端送來的 GA 數據製作 Dashboard 頁面。',
+        '偶爾協助後端開發製作 Model、Controller 和開發 API。',
+        '使用 Lerna 管理 49 個存放於 NPM 的 Packages。',
+        '引入 TSDoc，讓註解也能成為文件，也更方便查看。',
+      ],
     },
     // 歐銀數位科技
     {
@@ -50,19 +60,15 @@ const resumeData = {
         name: '歐銀數位科技',
       },
       title: '前端工程師',
-      duration: '2019/7 ~ 2020/1 (半年)',
+      duration: '2019/7 ~ 2020/1 (6 個月)',
       image: {
         src: '/images/company_logo/o2gether.jpg',
         alt: '歐銀數位科技公司 Logo',
       },
       responsibility: [
-        '會員/員工的身分/權限設定及管理',
-        '網站內容管理 (編輯前台顯示之內容和區塊)',
-        '會員層級 (類似 VIP 功能)',
-        '優惠活動和回饋金額設定',
-        '公告信和站內信管理',
-        '會員及員工金流紀錄報表設定和匯出',
-        '金流稽核功能',
+        '開發和維護後台管理系統。',
+        '使用 jQuery 的 Ajax 串接後端 API。',
+        '使用 Vue 製作 i18n 的代號搜尋器供內部使用，加速開發流程。',
       ],
     },
     // 才式創意科技
@@ -72,16 +78,20 @@ const resumeData = {
         url: 'http://www.greatone.com.tw/',
       },
       title: '網頁設計師 (前端)',
-      duration: '2016/7 ~ 2019/5 (2年10個月)',
+      duration: '2016/7 ~ 2019/5 (2 年 10 個月)',
       image: {
         src: '/images/company_logo/greatone.jpg',
         alt: '才式創意科技公司 Logo',
       },
       responsibility: [
-        '運用 HTML5、SCSS 及 jQuery 將設計稿製成 RWD、AWD 網頁。',
-        '使用 PhotoShop Resize 或是微調圖片，確保各裝置顯示正確。',
-        '網頁維運。',
-        '前端公版製作維護。',
+        '將 PhotoShop 設計稿製成靜態 RWD、AWD 網頁給後端工程師套版。',
+        '引入 SCSS 工具，節省開發時間。',
+        '使用 PhotoShop 來 Resize、調整圖檔，確保能夠正確且清楚的顯示。',
+        '適當的壓縮圖檔以提升讀取效能。',
+        '製作前端的 boilerplate 讓每個專案都能省下架構初始化的時間。',
+        '使用 jQuery 製作符合公司常用設計的 Lightbox Plugin，避免大家重造輪子。',
+        '設計使用者互動的動態、使用 TweenMax Plugin 設計和製作進場動畫。',
+        '不停地切版。',
       ],
     },
   ],
@@ -117,6 +127,10 @@ const resumeData = {
       contents: [
         {
           name: 'React',
+          desc: ``,
+        },
+        {
+          name: 'Redux-Saga',
           desc: ``,
         },
         {
@@ -375,7 +389,7 @@ const Resume: React.FC = () => {
               <br />
               由於公司為接案公司的緣故，案子不少時間又短，同時間還需要維護現有專案，懂得如何分辨輕重緩急來排程，快速解決客戶問題及突發狀況的處理能力慢慢被培養起來。
               <br />
-              身為菜鳥不免會有應付不來的狀況發生，所以私下開始做些提升效率的工作：背記 Emmet、撰寫
+              身為菜鳥不免會有應付不來的狀況發生，所以私下開始做些提升效率的工作: 背記 Emmet、撰寫
               boilerplate、撰寫 Plugin、將常用的模板先寫好(Hamburger 之類)、撰寫 Snippets...
               等等；理解到不能傻傻的努力，而是要聰明效率的工作。
               <br />

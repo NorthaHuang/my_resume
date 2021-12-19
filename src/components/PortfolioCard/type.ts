@@ -7,5 +7,6 @@ type UrlType = {
 export type CardProps = {
   name: string;
   slug?: string;
+  imgSrc?: string;
   url?: UrlType;
 };

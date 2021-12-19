@@ -5,15 +5,15 @@ import { RatioBox } from '@components/RatioBox';
 import S from './styled';
 import type { CardProps } from './type';
 
-export const PortfolioCard: React.FC<CardProps> = ({ name, slug, url }) => (
+export const PortfolioCard: React.FC<CardProps> = ({ name, slug, url, imgSrc }) => (
   <S.Wrapper>
     <RatioBox>
-      <S.Card>
-        {/* Project name */}
-        <S.ProjectName className="hover-project-name">{name}</S.ProjectName>
-
+      <S.Card bgImage={imgSrc}>
         {/* Mask */}
         <S.Mask className="hover-card-mask">
+          {/* Project name */}
+          <S.ProjectName className="hover-project-name">{name}</S.ProjectName>
+
           {slug && (
             <Link href={`/portfolio/${slug}`}>
               <S.ALink>專案說明</S.ALink>
