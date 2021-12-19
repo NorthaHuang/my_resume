@@ -1,8 +1,8 @@
 import { NextPage } from 'next';
 
 import PageLayout from '@components/layout/PageLayout';
-import Error from '@Src/views/Error';
-import type { ErrorProps } from '@Src/views/Error/type';
+import Error from '@views/Error';
+import type { ErrorProps } from '@views/Error/type';
 
 const pageMetadata = {
   title: '',

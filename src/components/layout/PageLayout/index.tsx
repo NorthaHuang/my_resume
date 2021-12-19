@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
-import Footer from '@components/Footer';
-import Header from '@components/Header';
+import Footer from '@views/Footer';
+import Header from '@views/Header';
 
 import S from './styled';
 import type { PageLayoutProps } from './type';

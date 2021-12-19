@@ -1,6 +1,6 @@
 import Grid from '@components/layout/Grid';
 
-const Home: React.FC = () => {
+const Resume: React.FC = () => {
   return (
     <Grid>
       <h1>Hello World!</h1>
@@ -8,4 +8,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Resume;
