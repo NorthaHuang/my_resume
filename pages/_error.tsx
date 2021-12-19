@@ -1,20 +1,18 @@
 import { NextPage } from 'next';
-import Head from 'next/head';
 
 import PageLayout from '@components/layout/PageLayout';
-import Error from '@components/Error';
-import type { ErrorProps } from '@components/Error/type';
+import Error from '@views/Error';
+import type { ErrorProps } from '@views/Error/type';
+
+const pageMetadata = {
+  title: '',
+  description: 'Something went wrong',
+};
 
 const ErrorPage: NextPage<ErrorProps> = (props) => (
-  <>
-    <Head>
-      <title>Something went wrong</title>
-    </Head>
-
-    <PageLayout>
-      <Error {...props} />
-    </PageLayout>
-  </>
+  <PageLayout {...pageMetadata}>
+    <Error {...props} />
+  </PageLayout>
 );
 
 ErrorPage.getInitialProps = ({ res, err }) => {

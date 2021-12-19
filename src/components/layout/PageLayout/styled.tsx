@@ -7,6 +7,7 @@ export default {
     flex-direction: column;
   `,
   Main: styled.main`
+    padding: 20px 0;
     flex-grow: 1;
   `,
 };

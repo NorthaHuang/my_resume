@@ -4,7 +4,7 @@ import { GridProps } from './types';
 
 /**
  * Grid system wrapper.
- * If you want to add mutiple `<Row />`, `<Col />` or doing other things on inner components,
+ * If you want to add multiple `<Row />`, `<Col />` or doing other things on inner components,
  * please just import 'react-bootstrap' to use.
  *
  * @param noCol - let `children` to be wrapped in `<Col />` or not.

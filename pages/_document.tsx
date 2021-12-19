@@ -12,6 +12,10 @@ class MyDocument extends Document {
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
+    /*
+     * 使 Styled-Components 在開發階段可以自動更新 DOM 上的 Class Name，
+     * 以避免 Hot Reload 時樣式無法更新。
+     */
     try {
       ctx.renderPage = () =>
         originalRenderPage({

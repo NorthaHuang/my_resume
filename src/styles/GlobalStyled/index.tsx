@@ -11,6 +11,9 @@ const GlobalStyled = createGlobalStyle`
   ${bootstrapGrid}
 
   /** Custom Setting */
+  html, body {
+    color: #444;
+  }
   select {
     cursor: pointer;
   }
