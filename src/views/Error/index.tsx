@@ -1,5 +1,6 @@
+import Link from 'next/link';
+
 import Grid from '@components/layout/Grid';
-import { Button } from '@ui';
 
 import type { ErrorProps } from './type';
 
@@ -10,7 +11,9 @@ const Error: React.FC<ErrorProps> = ({ statusCode }) => (
       {statusCode ? `An error ${statusCode} occurred on server` : 'An error occurred on client'}
     </h2>
 
-    <Button onClick={() => window.history.back()}>Take me back home</Button>
+    <Link href="/">
+      <a>Take me back home</a>
+    </Link>
   </Grid>
 );
 
