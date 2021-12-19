@@ -2,7 +2,17 @@ import styled from 'styled-components';
 import { rgba } from 'polished';
 
 export default {
-  Card: styled.div`
+  // gap: 12px;
+  Wrapper: styled.div`
+    width: 100%;
+    @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
+      width: calc(50% - 6px);
+    }
+    @media ${({ theme: { breakpoints } }) => breakpoints.desktop} {
+      width: calc(33% - 8px);
+    }
+  `,
+  Card: styled.li`
     width: 100%;
     height: 100%;
     padding: 4px 8px;
@@ -41,6 +51,7 @@ export default {
     justify-content: flex-end;
     gap: 0 8px;
     background-color: ${({ theme: { palette } }) => rgba(palette.BLACK, 0.75)};
+    backdrop-filter: blur(10px);
     position: absolute;
     top: 50%;
     left: 0;

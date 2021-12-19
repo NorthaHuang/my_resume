@@ -42,7 +42,7 @@ const resumeData = {
         src: '/images/company_logo/sparkamplify.jpg',
         alt: 'SparkAmplify 公司 Logo',
       },
-      responsibility: ['開發新系統和維護現有產品'],
+      responsibility: ['開發新系統和維護現有產品。'],
     },
     // 歐銀數位科技
     {

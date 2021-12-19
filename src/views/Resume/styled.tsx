@@ -90,12 +90,19 @@ export default {
     gap: 12px;
   `,
   SkillListItem: styled.li`
-    width: calc(33% - 8px);
+    width: 100%;
     padding: 8px;
     border: 1px solid ${({ theme: { palette } }) => palette.GRAY};
     border-radius: ${({ theme: { shape } }) => shape.borderRadius.standard}px;
     box-shadow: 1px 2px 4px ${({ theme: { palette } }) => palette.SILVER};
     background-color: ${({ theme: { palette } }) => palette.GAINSBORO};
+
+    @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
+      width: calc(50% - 6px);
+    }
+    @media ${({ theme: { breakpoints } }) => breakpoints.desktop} {
+      width: calc(33% - 8px);
+    }
   `,
   SkillCategory: styled.h4`
     font-weight: bold;
