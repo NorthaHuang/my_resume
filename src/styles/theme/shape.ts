@@ -1,1 +1,6 @@
-export default { borderRadius: 4 };
+export default {
+  borderRadius: {
+    standard: 4,
+    blunt: 8,
+  },
+};

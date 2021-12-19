@@ -8,7 +8,7 @@ export default {
     padding: 4px 8px;
     overflow: hidden;
     border: 1px solid ${({ theme: { palette } }) => palette.BLACK};
-    border-radius: ${({ theme: { shape } }) => shape.borderRadius}px;
+    border-radius: ${({ theme: { shape } }) => shape.borderRadius.standard}px;
     position: relative;
 
     &:hover {
