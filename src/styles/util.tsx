@@ -19,6 +19,9 @@ export const Util = {
       `}
   `,
   PageTitle: styled.h1`
+    margin-bottom: 24px;
     font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
   `,
 };
