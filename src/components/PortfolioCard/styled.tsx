@@ -9,6 +9,7 @@ export const S = {
   // gap: 12px;
   Wrapper: styled.div`
     width: 100%;
+    box-shadow: 1px 2px 8px ${({ theme }) => theme.palette.SILVER};
     @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
       width: calc(50% - 6px);
     }

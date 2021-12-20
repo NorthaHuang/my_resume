@@ -112,7 +112,7 @@ const Portfolio: React.FC = () => {
       <Util.PageTitle>作品集</Util.PageTitle>
 
       <S.Section>
-        <h2>GitHub Repo Demo</h2>
+        <S.SectionTitle>GitHub Repo Demo</S.SectionTitle>
         <S.List>
           {githubProjectData.map((data) => (
             <PortfolioCard key={data.name} {...data} />
@@ -122,9 +122,9 @@ const Portfolio: React.FC = () => {
 
       {greatOneData.length > 0 && (
         <S.Section>
-          <h2>
+          <S.SectionTitle>
             在線作品 <span>(才式創意科技有限公司)</span>
-          </h2>
+          </S.SectionTitle>
           <S.List>
             {greatOneData.map((data) => (
               <PortfolioCard key={data.name} {...data} />
