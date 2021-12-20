@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { ExpandParagraph } from '@Src/components/ExpandParagraph';
 
-export default {
+export const S = {
   /* Container */
   Wrapper: styled.article`
     width: 100%;
@@ -39,10 +39,16 @@ export default {
 
   /* Information */
   InfoImageWrapper: styled.div`
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     overflow: hidden;
     border-radius: 100%;
+    flex-shrink: 0;
+
+    @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
+      width: 120px;
+      height: 120px;
+    }
 
     > img {
       width: 100%;
@@ -143,5 +149,10 @@ export default {
     margin-bottom: 0;
     font-size: 1.25rem;
     font-weight: bold;
+  `,
+
+  /* Autobiography */
+  AutobiographyParagraph: styled.p`
+    white-space: pre-wrap;
   `,
 };
