@@ -3,8 +3,8 @@ import { PortfolioCard } from '@components/PortfolioCard';
 
 import type { CardProps } from '@components/PortfolioCard/type';
 
-import Util from '@styles/util';
-import S from './styled';
+import { Util } from '@styles/util';
+import { S } from './styled';
 
 const GITHUB_REPO_DOMAIN = 'https://github.com/NorthaHuang';
 const GITHUB_PAGE_DOMAIN = 'https://northahuang.github.io';
@@ -112,7 +112,7 @@ const Portfolio: React.FC = () => {
       <Util.PageTitle>作品集</Util.PageTitle>
 
       <S.Section>
-        <h2>GitHub Repo Demo</h2>
+        <S.SectionTitle>GitHub Repo Demo</S.SectionTitle>
         <S.List>
           {githubProjectData.map((data) => (
             <PortfolioCard key={data.name} {...data} />
@@ -122,9 +122,9 @@ const Portfolio: React.FC = () => {
 
       {greatOneData.length > 0 && (
         <S.Section>
-          <h2>
+          <S.SectionTitle>
             在線作品 <span>(才式創意科技有限公司)</span>
-          </h2>
+          </S.SectionTitle>
           <S.List>
             {greatOneData.map((data) => (
               <PortfolioCard key={data.name} {...data} />

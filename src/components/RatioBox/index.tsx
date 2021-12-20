@@ -1,4 +1,4 @@
-import S from './styled';
+import { S } from './styled';
 import type { RatioBoxProps } from './type';
 
 const DEFAULT_RATIO = {

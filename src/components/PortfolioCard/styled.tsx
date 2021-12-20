@@ -1,14 +1,18 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
+import { boxShadow } from '@styles/util';
+
 type CardProps = {
   bgImage?: string;
 };
 
-export default {
+export const S = {
   // gap: 12px;
   Wrapper: styled.div`
     width: 100%;
+    ${boxShadow}
+
     @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
       width: calc(50% - 6px);
     }

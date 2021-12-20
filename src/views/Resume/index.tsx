@@ -1,9 +1,10 @@
 import Image from 'next/image';
 
 import Grid from '@components/layout/Grid';
-import Util from '@styles/util';
+import { Util } from '@styles/util';
 
 import { S } from './styled';
+import avatarImage from '../../../public/images/avatar.jpg';
 
 const resumeData = {
   info: {
@@ -258,7 +259,7 @@ const Resume: React.FC = () => {
           {/* Name, Description */}
           <Util.FlexBox align="flex-start" justify="flex-start" gap="0 20px">
             <S.InfoImageWrapper>
-              <img src="/images/avatar.jpg" alt="Northa 的照片" />
+              <Image src={avatarImage} layout="responsive" alt="Northa 的照片" />
             </S.InfoImageWrapper>
 
             <div>
@@ -282,7 +283,7 @@ const Resume: React.FC = () => {
                 <li>{resumeData.info.title}</li>
                 <li>{resumeData.info.location}</li>
                 <li>
-                  <a href={resumeData.info.email}>{resumeData.info.email}</a>
+                  <a href={`mailto:${resumeData.info.email}`}>{resumeData.info.email}</a>
                 </li>
               </S.InformationList>
             </div>
@@ -298,7 +299,7 @@ const Resume: React.FC = () => {
               <S.CompanyListItem key={data.company.name}>
                 <S.ExperienceCompanyWrapper>
                   <Util.FlexBox justify="flex-start" gap="0 12px">
-                    <img src={data.image.src} width="48" height="48" alt={data.image.alt} />
+                    <Image src={data.image.src} width={48} height={48} alt={data.image.alt} />
                     {data.company?.url ? (
                       <a href={data.company.url} target="_blank" rel="noopener noreferrer">
                         {data.company.name}

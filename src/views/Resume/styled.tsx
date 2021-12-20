@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
-import { ExpandParagraph } from '@Src/components/ExpandParagraph';
+import { ExpandParagraph } from '@components/ExpandParagraph';
+import { boxShadow } from '@styles/util';
 
 export const S = {
   /* Container */
@@ -10,8 +11,8 @@ export const S = {
     margin: auto;
     padding: 24px;
     border-radius: ${({ theme: { shape } }) => shape.borderRadius.blunt}px;
-    box-shadow: 1px 2px 4px ${({ theme: { palette } }) => palette.FORD_GRAY};
     background-color: ${({ theme: { palette } }) => palette.GALLERY};
+    ${boxShadow}
 
     p {
       &:last-of-type {
