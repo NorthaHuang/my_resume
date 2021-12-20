@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
+import { boxShadow } from '@styles/util';
+
 export const S = {
   Section: styled.section`
     padding: 16px 24px;
     overflow: hidden;
     border-radius: ${({ theme }) => theme.shape.borderRadius.standard}px;
-    box-shadow: 1px 2px 8px ${({ theme }) => theme.palette.SILVER};
     background-color: ${({ theme: { palette } }) => palette.GALLERY};
+    ${boxShadow}
 
     &:not(:last-of-type) {
       margin-bottom: 40px;

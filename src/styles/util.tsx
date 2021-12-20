@@ -25,3 +25,7 @@ export const Util = {
     text-decoration: underline;
   `,
 };
+
+export const boxShadow = css`
+  box-shadow: 1px 2px 8px ${({ theme: { palette } }) => palette.FORD_GRAY};
+`;

@@ -1,6 +1,8 @@
 import styled, { css } from 'styled-components';
 import { rgba } from 'polished';
 
+import { boxShadow } from '@styles/util';
+
 type CardProps = {
   bgImage?: string;
 };
@@ -9,7 +11,8 @@ export const S = {
   // gap: 12px;
   Wrapper: styled.div`
     width: 100%;
-    box-shadow: 1px 2px 8px ${({ theme }) => theme.palette.SILVER};
+    ${boxShadow}
+
     @media ${({ theme: { breakpoints } }) => breakpoints.tablet} {
       width: calc(50% - 6px);
     }
