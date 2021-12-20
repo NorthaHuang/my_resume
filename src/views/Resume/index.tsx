@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import Grid from '@components/layout/Grid';
-import Util from '@styles/util';
+import { Util } from '@styles/util';
 
 import { S } from './styled';
 
@@ -282,7 +282,7 @@ const Resume: React.FC = () => {
                 <li>{resumeData.info.title}</li>
                 <li>{resumeData.info.location}</li>
                 <li>
-                  <a href={resumeData.info.email}>{resumeData.info.email}</a>
+                  <a href={`mailto:${resumeData.info.email}`}>{resumeData.info.email}</a>
                 </li>
               </S.InformationList>
             </div>

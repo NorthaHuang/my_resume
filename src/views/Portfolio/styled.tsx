@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { rgba } from 'polished';
 
-export default {
+export const S = {
   Section: styled.section`
     &:not(:last-of-type) {
       margin-bottom: 20px;

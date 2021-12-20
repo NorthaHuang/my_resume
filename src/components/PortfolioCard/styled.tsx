@@ -5,7 +5,7 @@ type CardProps = {
   bgImage?: string;
 };
 
-export default {
+export const S = {
   // gap: 12px;
   Wrapper: styled.div`
     width: 100%;

@@ -8,7 +8,7 @@ type ContainerProps = {
   ratioValue: number;
 };
 
-export default {
+export const S = {
   Wrapper: styled.div<WrapperProps>`
     width: ${({ width }) => width};
     ${({ maxWidth }) =>

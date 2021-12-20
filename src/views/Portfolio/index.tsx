@@ -3,8 +3,8 @@ import { PortfolioCard } from '@components/PortfolioCard';
 
 import type { CardProps } from '@components/PortfolioCard/type';
 
-import Util from '@styles/util';
-import S from './styled';
+import { Util } from '@styles/util';
+import { S } from './styled';
 
 const GITHUB_REPO_DOMAIN = 'https://github.com/NorthaHuang';
 const GITHUB_PAGE_DOMAIN = 'https://northahuang.github.io';

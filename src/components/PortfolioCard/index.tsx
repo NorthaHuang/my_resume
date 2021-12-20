@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { RatioBox } from '@components/RatioBox';
 
-import S from './styled';
+import { S } from './styled';
 import type { CardProps } from './type';
 
 export const PortfolioCard: React.FC<CardProps> = ({ name, slug, url, imgSrc }) => (

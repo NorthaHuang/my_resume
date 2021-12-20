@@ -1,6 +1,6 @@
 import Grid from '@components/layout/Grid';
 
-import S from './styled';
+import { S } from './styled';
 
 const startYear = 2021;
 const thisYear = new Date().getFullYear();

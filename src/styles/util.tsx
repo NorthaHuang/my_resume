@@ -6,7 +6,7 @@ type FlexBoxProps = {
   justify?: string;
 };
 
-export default {
+export const Util = {
   FlexBox: styled.div<FlexBoxProps>`
     display: flex;
     align-items: ${({ align }) => align || 'center'};

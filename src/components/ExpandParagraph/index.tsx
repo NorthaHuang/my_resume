@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import S from './styled';
+import { S } from './styled';
 
 export const ExpandParagraph: React.FC = ({ children }) => {
   const [isExpand, setIsExpand] = useState(false);

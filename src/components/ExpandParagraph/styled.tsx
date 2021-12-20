@@ -4,7 +4,7 @@ type IsExpandProps = {
   isExpand: boolean;
 };
 
-export default {
+export const S = {
   Wrapper: styled.div`
     cursor: pointer;
     display: flex;

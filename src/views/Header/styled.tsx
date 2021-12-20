@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import Util from '@styles/util';
+import { Util } from '@styles/util';
 
-export default {
+export const S = {
   Wrapper: styled.header`
     padding: 4px 0;
     border-bottom: 1px solid ${({ theme: { palette } }) => palette.GALLERY};

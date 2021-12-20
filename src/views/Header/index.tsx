@@ -2,9 +2,9 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import Grid from '@components/layout/Grid';
-import Util from '@styles/util';
+import { Util } from '@styles/util';
 
-import S from './styled';
+import { S } from './styled';
 
 const routes = [
   {
