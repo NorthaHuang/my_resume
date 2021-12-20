@@ -8,10 +8,13 @@ const thisYear = new Date().getFullYear();
 const Footer: React.FC = () => (
   <S.Wrapper>
     <Grid>
-      <S.Copyright>
+      <S.Text>
         Created by Northa. ©{startYear}
         {thisYear > startYear && `~${thisYear}`}
-      </S.Copyright>
+      </S.Text>
+      <S.Text>
+        Powered by <strong>Next.js</strong>
+      </S.Text>
     </Grid>
   </S.Wrapper>
 );
